@@ -97,7 +97,6 @@ public class Line {
         y4 = another.getBeginY();
         double x = ((x1*y2-x2*y1)*(x4-x3)-(x3*y4-x4*y3)*(x2-x1))/((y1-y2)*(x4-x3)-(y3-y4)*(x2-x1));
         double y = ((y3-y4)*x-(x3*y4-x4*y3))/(x4-x3);
-        double z = ((y1-y2)*(x4-x3)-(y3-y4)*(x2-x1));
        return (((x1 <= x) && (x2 >= x) && (x3 <= x) && (x4 >= x)) || ((y1 <= y) && (y2 >= y) && (y3 <= y) && (y4 >= y)));
 
     }

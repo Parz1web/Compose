@@ -62,6 +62,6 @@ public class Main {
         Line l2 = new Line(p5,p6);
         System.out.println(l1.intersects(l2)); //false можно проверить построив отрезки на графике
 
-       
+
     }
 }
