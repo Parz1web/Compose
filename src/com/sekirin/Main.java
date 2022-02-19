@@ -62,6 +62,32 @@ public class Main {
         Line l2 = new Line(p5,p6);
         System.out.println(l1.intersects(l2)); //false можно проверить построив отрезки на графике
 
+    ///////////////////////////////
+        ///НАСЛЕДОВАНИЕ///
 
+        //Test Cylinder
+
+        Cylinder cylinder1 = new Cylinder();
+        System.out.println("Радиус:" + cylinder1.getRadius() + " Высота:" + cylinder1.getHeight() +
+                 " Площадь основания:" + cylinder1.getArea() + " Объем:" + cylinder1.getVolume());
+        System.out.println(cylinder1.toString());
+        Cylinder cylinder2 = new Cylinder(5.0, 2.0);
+        System.out.println("Радиус:" + cylinder2.getRadius() + " Высота:" + cylinder2.getHeight() +
+                " Площадь основания:" + cylinder2.getArea() + " Объем:" + cylinder2.getVolume());
+
+        System.out.println(cylinder2.toString());
+
+        System.out.println("Площадь поверхности cylinder2: "+ cylinder2.getArea());
+
+        Point3D point1 = new Point3D(1,2,3);
+        System.out.println(point1.toString());
+        Point3D point2 = new Point3D(new Point(2,4),1);
+        System.out.println(point2.toString());
+        System.out.println(point2.distance());
+
+        point2.multiplyByScalar(4); //1ый доп. метод
+
+        System.out.println(point2.toString());
+        System.out.println(point2.distance()); //2ой доп. метод
     }
 }
